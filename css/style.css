@@ -6,6 +6,7 @@
 body {
   font-family: 'Josefin Sans', 'sans-serif';
   font-family: 'Roboto', 'sans-serif';
+  font-size: 14px;
 }
 .navbar {
   width: 100%;
@@ -19,6 +20,8 @@ body {
 }
 .nav-top {
   height: 20%;
+  display: flex;
+  align-items: center;
 }
 .nav-top span {
   font-size: 22px;
@@ -34,7 +37,21 @@ body {
 .nav-bottom ul li {
   display: inline-block;
   margin-right: 40px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #8A8D91;
+}
+.nav-bottom ul li.question {
+  padding-bottom: 5px;
+  color: #7497E3;
+  border-bottom: 3px solid #7497E3;
+}
+.account {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #8A8D91;
 }
 .wrapper_65 {
   width: 65%;
@@ -43,6 +60,8 @@ body {
 h2 {
   margin-bottom: 20px;
   font-family: 'Josefin Sans', 'sans-serif';
+  font-size: 24px;
+  line-height: 30px;
   color: #3C4043;
 }
 p {

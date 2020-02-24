@@ -56,11 +56,11 @@
             <li>Norme sulla privacy</li>
             <li>Termini di servizio</li>
             <li>Tecnologie</li>
-            <li>Domande frequenti</li>
+            <li class="question">Domande frequenti</li>
           </ul>
         </div>
         <div class="col-right">
-          <span>Account Google</span>
+          <span class="account">Account Google</span>
         </div>
       </div>
     </div>
