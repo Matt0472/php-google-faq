@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Roboto', 'sans-serif';
+}
+.navbar {
+  height: 100px;
+  padding: 30px 20px 0 20px;
+  border-bottom: 2px solid lightgrey;
+}
+.nav-top {
+  height: 20%;
+}
+.nav-top span {
+  font-size: 22px;
+  margin-left: 10px;
+}
+.nav-bottom {
+  display: flex;
+  height: 80%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.nav-bottom ul li {
+  display: inline-block;
+}
+.wrapper_80 {
+  width: 80%;
+  margin: auto;
+  padding-top: 120px;
+}
+p {
+  margin-bottom: 20px;
+}

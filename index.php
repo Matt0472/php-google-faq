@@ -31,17 +31,6 @@
       'answer' => "<p>In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di URL referrer. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili qui. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.</p>"
     ]
   ];
-  // foreach ($db as $questions => $answers) {
-  //   echo $questions;
-  //   foreach ($answers as $answer) {
-  //     foreach ($answer as $paragraf) {
-  //       echo $paragraf;
-  //     }
-  //   }
-  // }
-  foreach ($db as $faq) {
-    echo $faq['question'] . ' ' . $faq['answer'];
-  }
 ?>
 
 
@@ -52,9 +41,33 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
-
+    <div class="navbar">
+      <div class="nav-top">
+        <img src="img/googlelogo_color.png" alt=""><span>Privacy e Termini</span>
+      </div>
+      <div class="nav-bottom">
+        <div class="col-left">
+          <ul>
+            <li>Introduzione</li>
+            <li>Norme sulla privacy</li>
+            <li>Termini di servizio</li>
+            <li>Tecnologie</li>
+            <li>Domande frequenti</li>
+          </ul>
+        </div>
+        <div class="col-right">
+          <span>Account Google</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper_80">
+      <?php foreach ($db as $faq) { ?>
+        <?php echo $faq['question'] . ' ' . $faq['answer']; ?>
+      <?php } ?>
+    </div>
   </body>
 </html>
