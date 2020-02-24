@@ -41,7 +41,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Roboto:400,700&display=swap" rel="stylesheet">
     <title></title>
   </head>
   <body>
@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="wrapper_80">
+    <div class="wrapper_65">
       <?php foreach ($db as $faq) { ?>
         <?php echo $faq['question'] . ' ' . $faq['answer']; ?>
       <?php } ?>
